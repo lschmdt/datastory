@@ -1,0 +1,97 @@
+header:
+    title: Welcome to our project!
+    text: "Greta Thunberg"
+    button: Tell Me More
+    buttonlink: "#services"
+    image: assets/img/header/greta.jpg
+
+services:
+    title: "Introduction"
+    text: "The goal of this work is to observe if the public action of Greta Thunberg and her continual incitation for people to educate themselves on the subject of climate change has actually made a difference. This effect would be diametrically different from a chilling effect in that it pushes people to get educated on a subject, effectively arguably increasing their levels of freedom. This effect shall henceforth be called an Empowering effect. "
+    section: description
+    
+results:
+    title: "Results"
+
+timeline:
+    title: "The timeline" 
+    text: "The 3 important events"
+    section: timeline
+    # left is the default
+    #start_align: "left"
+    events:
+      - title: "First school strike"
+        year: "20.08.2018"
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+        image: assets/img/timeline/greta.jpg
+        alt: 
+      - title: "United Nations Climate Change Conference (COP24)"
+        year: "14.12.2018"
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+        image: assets/img/timeline/2.jpg
+        alt: 
+      - title: "Summit of the United Nations"
+        year: "13.09.2019"
+        desc: "Ravi Riley converted Agency, a Bootstrap-based theme, into a Jekyll theme. The Jekyll theme can be installed as a Ruby gem, or remotely. For more information, visit the documentation."
+        image: assets/img/timeline/3.jpg
+        alt: image alt text
+        alt: 
+        # you can enforce the aligment
+        align: right
+    end: "To be continued..."
+
+modals:
+
+about:
+    title: "About Us"
+    text: "our story"
+    section: about
+
+clients:
+    section: clients
+    max-height: 100px
+    horizontal-scrolling: "" #"yes/no"
+    list:
+      - title: "envato"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/envato.jpg
+      - title: "designmodo"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/designmodo.jpg
+      - title: "themeforest"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/themeforest.jpg
+      - title: "Creative Market"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/creative-market.jpg
+    
+team:
+    title: "OUR AMAZING TEAM"
+    text: "Lorem ipsum dolor sit amet consectetur."
+    subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
+    section: team
+    people:
+      - name: "Jonathan Haenni"
+        role: "Microtechnique"
+        image: assets/img/team/500x500.jpg
+      - name: "Danny Kohler"
+        role: "Lead Marketer"
+        image: assets/img/team/2.jpg
+      - name: "Léa Schmidt"
+        role: "Lead Developer"
+        image: assets/img/team/500x500.jpg
+
+contact:
+    title: "Contact Us"
+    text: "Lorem ipsum or call 123456789"
+    section: contact
+    
+footer:
+    legal: "Privacy Policy"
+    social:
+      - url: https://github.com/raviriley/agency-jekyll-theme
+        icon: "fab fa-github"
+
+
+
+# {{ site.data.sitetext.ex.ex | markdownify | default: example }}
