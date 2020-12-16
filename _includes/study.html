@@ -1,0 +1,24 @@
+<!-- Services -->
+<section class="page-section" id="{{ site.data.sitetext.study.section | default: "services" }}">
+    <div class="container">
+	
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">{{ site.data.sitetext.study.title | default: "" }}</h2>
+          {% if site.data.sitetext.study.text %}
+		  <h3 class="class1" >{{ site.data.sitetext.study.text }}</h3>
+		  {% endif %}
+        </div>
+      </div>
+
+	  
+    </div>
+  </section>
+  <style>
+    .class1{
+      color:black;
+      text-align:justify;
+      font-size: 1.2em;
+    }
+  </style>
+<!-- End Services -->

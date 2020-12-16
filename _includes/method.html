@@ -1,0 +1,26 @@
+<!-- Results -->
+<section class="page-section" id="{{ site.data.sitetext.method.section | default: "method" }}">
+    <div class="container">
+	
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">{{ site.data.sitetext.method.title }}</h2>
+          {% if site.data.sitetext.method.titre1 %}
+		  <h3 class="section-subheading text-muted"></p>{{ site.data.sitetext.method.titre1 }}</h3>
+		  {% endif %}
+            {% if site.data.sitetext.method.text1 %}
+            <h4 class="section-subheading text-muted"></p>{{ site.data.sitetext.method.text1 }}</h4>
+            {% endif %}
+          {% if site.data.sitetext.method.titre2 %}
+          <h3 class="section-subheading text-center"></p>{{ site.data.sitetext.method.titre2 }}</h3>
+          {% endif %}
+            {% if site.data.sitetext.method.text2 %}
+            <h4 class="section-subheading text-center"></p>{{ site.data.sitetext.method.text2 }}</h4>
+            {% endif %}
+        </div>
+      </div>
+
+	  
+    </div>
+  </section>
+<!-- End Results -->
