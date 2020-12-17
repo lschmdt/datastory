@@ -12,9 +12,10 @@
         <br>
         <br>
         
-        {% if site.data.sitetext.results.text %}
-        <h3 class="section-subheading text-muted"></p>{{ site.data.sitetext.results.text }}</h3>
-        {% endif %}
+        <div>
+            <img class="card-img column" src=assets/img/results/common_bar_plot_without_outliers.svg> 
+            <img class="card-img column" src=assets/img/results/scientific_bar_plot_without_outliers.svg>
+        </div>
         </div>
         <br/>
         <br/>
@@ -90,6 +91,12 @@
     .carousel-control-prev /*, .carousel-indicators */ {
     filter: invert(100%);
         }
+
+    .column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+    }
 </style>
 
 <!-- End Results -->
