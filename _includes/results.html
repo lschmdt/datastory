@@ -3,10 +3,14 @@
     <div class="container">
     
     <div class="row">
-        <div class="col-lg-12 text-center">
-        <h2 class="section-heading text-uppercase">{{ site.data.sitetext.results.title | default: "Results" }}</h2>
-        <br/>
-        <br/>
+        <div class="col-lg-12 text-center class1">
+        <h2 class="section-heading text-uppercase text-center">Results</h2>
+        
+        <p>
+            To verify the claim of an "Empowering effect", we will use the immediate change in pageviews from before to after each event, as well as the long term trend indicated by the regression slopes and levels. The potential trends observed in the treatment group will be compared to the data in the comparator group. To verify the statistical significance of those results, the confidence intervals of the regressions are taken into consideration. 
+        </p>
+        <br>
+        <br>
         
         {% if site.data.sitetext.results.text %}
         <h3 class="section-subheading text-muted"></p>{{ site.data.sitetext.results.text }}</h3>
