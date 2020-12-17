@@ -10,11 +10,12 @@
             </p>
         <br>
         <br>
+        </div>
         <div class="row">
             <div class="col-lg-1"></div>
             <div class="card col-lg-5">
                 <img class="bd-placeholder-img mx-auto d-bloc card-img-top column" style = "width: 400px" src=assets/img/results/common_bar_plot_without_outliers.svg>
-                <div class="card-body class1" style="font-size: 0.9em;">
+                <div class="card-body" style="font-size: 0.9em;">
                     <p>
                         First, it is noted that the climate articles have a steady increase of monthly mean number of pageviews across the 3 events. This seems to be consistent with an “Empowering Effect” already before comparison with the control group. Compared with the control group, we observe that only the first (+12% for treatment,  -34% for control) and third (+14% for treatment, -40% for control) interruptions lead to a more positive difference of monthly mean number of pageviews for the treatment group, whereas the comparison of both sets for the second interruption (+2% for treatment, +59% for control) shows a radically more positive difference for the control group.
                     </p>
@@ -30,18 +31,20 @@
                 </div>
             </div>
             <div class="col-lg-1"></div>
+            
         </div>
-        <br/>
-        <br/>
+        
         <div class="col-lg-12 text-center class1">
+            <br>
+            <br>
             <p>
                 The steady increase of the treatment group when the other group has radical differences between periods is consistent with an "Empowering Effect" at least for the first and last interruptions. The control group has a large variance, which seems to make the comparison a bit fragile here.
 
                 Intuitively, if the claim of an "Empowering Effect" is true, the monthly mean number of pageviews across the 4 periods should increase more/decrease less in the treatment group (articles related to climate change) than in the control. This sort of trend is not observable for the scientific articles, at least not for the 2nd and 3rd interventions. One might argue that the first intervention might have had an impact. This claim is to be verified by further tests.
             </p>
+            <br>
+            <br>
         </div>
-        <br>
-        <br>
 
         <div class="row">
             <div class="col-sm-6">
@@ -79,14 +82,21 @@
         <br/>
         <br/>
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-4 class1">
                 <div>
-                    <p style="text-align: right;">
-                        Lorem ipsim
+                    <p>
+                        The linear regressions and their confidence intervals overlap heavily especially in the first and last periods. It is a good thing that they overlap in the first period because it means that both corpus are similar enough before the treatment appears. That they overlap so much in the last period would be consistent with the claim that there was no long term "Empowering Effect" in this case.
+                    </p>
+                    <p>
+                        No immediate change can be observed at the interruptions. The confidence intervals overlap quite a bit and it is difficult to assess a long term effect.
+                    </p>
+                    <p>
+                        It is worth noting here that the R-squared value of both linear regressions are similar, suggesting that the quality of the fits is comparable. This is also due to the fact that the variance in both sets is comparable.
                     </p>
                 </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-7">
                 <div id="carouselResults2" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active" data-interval= "10000">
