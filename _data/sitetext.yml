@@ -12,8 +12,7 @@ services:
 
 study:
     title: ""
-    text: "The chosen datas were number of pageviews of Wikipedia grouped by month. The study aims at showing if specific given event where Greta did appear mediatically changed the Wikipedia users habits.
-    The first part of the study looked at usual Wikipedia pages; a dataset of climate change related pages and a dataset of most popular pages. The second part dig even deeper by studying if people are really going to look into more theoretical information. It then compares scientific article of Wikipedia concerning climate change or anyother science related article. "
+    text: ""
 
 timeline:
     title: "The analysed datas" 
@@ -23,21 +22,21 @@ timeline:
     #start_align: "left"
     events:
       - title: "First school strike"
-        year: "20.08.2018"
+        year: "20th August 2018"
         desc: ""
         url: https://en.wikipedia.org/wiki/School_strike_for_climate
         image: assets/img/timeline/strike.png
         alt: 
         align: right
       - title: "United Nations Climate Change Conference (COP24)"
-        year: "14.12.2018"
+        year: "14th December 2018"
         desc: 
         url: https://www.climate-chance.org/agenda/cop24/
         image: assets/img/timeline/cop24.jpg
         alt: 
         align: left
       - title: "Summit of the United Nations"
-        year: "13.09.2019"
+        year: "13th September 2019"
         desc: ""
         url: https://www.un.org/en/summits2019/
         image: assets/img/timeline/united.png
@@ -57,16 +56,16 @@ results:
     title: "Results"
     
 team:
-    title: "OUR TEAM"
-    text: "Tadaa"
+    title: "MEET US"
+    text: 
     subtext:
     section: team
     people:
       - name: "Jonathan Haenni"
-        role: "Microtechnique"
+        role: "Microengineer"
         image: 
       - name: "Danny Kohler"
-        role: "Lead Marketer"
+        role: "Digital Forensic Science"
         image: 
       - name: "Léa Schmidt"
         role: "Bioengineering"

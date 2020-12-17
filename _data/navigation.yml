@@ -1,6 +1,9 @@
 nav:
-  - title: "Description"
+  - title: "About"
     section: description
+
+  - title: "Methods"
+    section: method
     
   - title: "Results"
     section: results
