@@ -5,23 +5,44 @@
     <div class="row">
         <div class="col-lg-12 text-center class1">
         <h2 class="section-heading text-uppercase text-center">Results</h2>
-        
-        <p>
-            To verify the claim of an "Empowering effect", we will use the immediate change in pageviews from before to after each event, as well as the long term trend indicated by the regression slopes and levels. The potential trends observed in the treatment group will be compared to the data in the comparator group. To verify the statistical significance of those results, the confidence intervals of the regressions are taken into consideration. 
-        </p>
+            <p>
+                To verify the claim of an "Empowering effect", we will use the immediate change in pageviews from before to after each event, as well as the long term trend indicated by the regression slopes and levels. The potential trends observed in the treatment group will be compared to the data in the comparator group. To verify the statistical significance of those results, the confidence intervals of the regressions are taken into consideration. 
+            </p>
         <br>
         <br>
         <div class="row">
-            <div class="card sm-6 shadow-sm">
-                <img class="bd-placeholder-img card-img-top column" width="100%" role = "img" preserveAspectRatio="xMidYMid slice" src=assets/img/results/common_bar_plot_without_outliers.svg> 
+            <div class="col-lg-1"></div>
+            <div class="card col-lg-5">
+                <img class="bd-placeholder-img mx-auto d-bloc card-img-top column" style = "width: 400px" src=assets/img/results/common_bar_plot_without_outliers.svg>
+                <div class="card-body class1" style="font-size: 0.9em;">
+                    <p>
+                        First, it is noted that the climate articles have a steady increase of monthly mean number of pageviews across the 3 events. This seems to be consistent with an “Empowering Effect” already before comparison with the control group. Compared with the control group, we observe that only the first (+12% for treatment,  -34% for control) and third (+14% for treatment, -40% for control) interruptions lead to a more positive difference of monthly mean number of pageviews for the treatment group, whereas the comparison of both sets for the second interruption (+2% for treatment, +59% for control) shows a radically more positive difference for the control group.
+                    </p>
+                </div> 
             </div>
-            <div class="card sm-6 shadow-sm">
-                <img class="bd-placeholder-img card-img-top column" width="100%" preserveAspectRatio="xMidYMid slice" src=assets/img/results/scientific_bar_plot_without_outliers.svg>
+            
+            <div class="card col-lg-5">
+                <img class="bd-placeholder-img mx-auto d-bloc card-img-top column" style = "width: 460px" src=assets/img/results/scientific_bar_plot_without_outliers.svg>
+                <div class="card-body" style="font-size: 0.9em;">
+                    <p>
+                    A comparison of the mean number of pageviews per month for each period is performed. The monthly mean is increased by about 2 % between period 1 and 2 for the treatment group whereas the monthly mean for the control is reduced by approximately 4.5 %. This doesn’t seem to be repeated for the second interruption, where the drop for both sets is comparable (approximately 10.5 %), even though a bit smaller for the climate change related set (more like 10.2 %). The trend is not verified either for the third interruption where the drop for the treatment is group 7.2 % but the drop for the control group is 4.3 %.
+                    </p>
+                </div>
             </div>
-            </div>
+            <div class="col-lg-1"></div>
         </div>
         <br/>
         <br/>
+        <div class="col-lg-12 text-center class1">
+            <p>
+                The steady increase of the treatment group when the other group has radical differences between periods is consistent with an "Empowering Effect" at least for the first and last interruptions. The control group has a large variance, which seems to make the comparison a bit fragile here.
+
+                Intuitively, if the claim of an "Empowering Effect" is true, the monthly mean number of pageviews across the 4 periods should increase more/decrease less in the treatment group (articles related to climate change) than in the control. This sort of trend is not observable for the scientific articles, at least not for the 2nd and 3rd interventions. One might argue that the first intervention might have had an impact. This claim is to be verified by further tests.
+            </p>
+        </div>
+        <br>
+        <br>
+
         <div class="row">
             <div class="col-sm-6">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -99,6 +120,12 @@
     float: left;
     width: 50%;
     padding: 5px;
+    }
+
+    .class1{
+      color:black;
+      text-align:justify;
+      font-size: 0.8em;
     }
 </style>
 
