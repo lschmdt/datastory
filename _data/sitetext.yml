@@ -65,10 +65,10 @@ team:
         role: "Microengineer"
         image: 
       - name: "Danny Kohler"
-        role: "Digital Forensic Science"
+        role: "Digital Forensic Scientist"
         image: 
       - name: "Léa Schmidt"
-        role: "Bioengineering"
+        role: "Bioengineer"
         image: 
 
 contact:
