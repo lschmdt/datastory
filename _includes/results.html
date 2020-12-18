@@ -26,7 +26,7 @@
                 <i>Global warming article</i>
             </p>
             <p>
-                We can plot the Global warming outlier for the whole period and consider the interruptions to see if it is consistent with an "Empowering Effect". Here, the pageviews are averaged over 7 days to filter out the weekly pattern.
+                On the image below, the Global warming outlier is plotted for the whole period, considering the interruptions to see if it is consistent with an "Empowering Effect". Here, the pageviews are averaged over 7 days to filter out the weekly pattern.
             </p>
             
             <img src=assets/img/results/global_warming.svg width="50%">
@@ -85,8 +85,9 @@
                 <b>Linear regression</b>
             </p>
             <p>
-                
-                If there is a short term "Empowering Effect", the short term change in number of pageviews after the interruption should be more positive for the treatment group than for the control. If there is a long term "Empowering Effect", the change in the slope of the regression after the interruption should be more positive for the treatment group than for the control. From that and the confidence intervals, it should be possible to assess if we can observe with confidence an "Empowering Effect".
+                FInally, a linear regression is performed in order to study more deeply the overall trend of our study between chosen periods. If there is a short term "Empowering Effect", the short term change in number of pageviews after the interruption should be more positive for the treatment group than for the control. If there is a long term "Empowering Effect", the change in the slope of the regression after the interruption should be more positive for the treatment group than for the control. From that and the confidence intervals, it should be possible to assess if we can observe with confidence an "Empowering Effect".
+            </p>
+            <p>
                 To correct for the radically different number of pageviews across article groups, the pageviews per month are normalized by the mean of the distribution. The normalization should not be dependent on the difference of noise between the data sets and therefore it is not normalized by the maximum value.
             </p>
             <br>
@@ -95,26 +96,26 @@
 
 
         <div class="row">
-            <div class="col-sm-7">
-                <img class="card-img" src="assets/img/results/common_climate_popular_no_outliers.svg"/>
-            </div>
-            <div class="col-sm-5">
-                <div>
-                    <p>
-                        <i>Common articles</i>
-                    </p>
-                    <p>
-                        The comparison between the linear regression on the popular articles and the one on the climate change related articles doesn’t seem to indicate clearly an "Empowering Effect". The long term effect is basically non-existent, indeed the slope of the number of views for both corpus is close to zero in the last period. A short term effect might possibly be argued at the last interruption, since a positive jump is observed in the number of pageviews of the climate change related articles and a negative jump is observed in the corpus featuring the popular articles. The strong negative jump in the corpus featuring the popular articles at the first interruption is also observable but can easily be attributed to noise, which is omnipresent on this set.
-                        We can see that the popular articles dataset is quite noisy from the R-squared value. Indeed, the optimal linear regression has R-squared equal to 0.499. The fit does not explain a large amount of the set’s variance.
-                    </p>
+                <div class="col-lg-7">
+                    <img class="card-img" src="assets/img/results/common_climate_popular_no_outliers.svg"/>
                 </div>
-            </div>
+                <div class="col-lg-5 class1">
+                    <div>
+                        <p>
+                            <i>Common articles</i>
+                        </p>
+                        <p>
+                            The comparison between the linear regression on the popular articles and the one on the climate change related articles doesn’t seem to indicate clearly an "Empowering Effect". The long term effect is basically non-existent, indeed the slope of the number of views for both corpus is close to zero in the last period. A short term effect might possibly be argued at the last interruption, since a positive jump is observed in the number of pageviews of the climate change related articles and a negative jump is observed in the corpus featuring the popular articles. The strong negative jump in the corpus featuring the popular articles at the first interruption is also observable but can easily be attributed to noise, which is omnipresent on this set.
+                            We can see that the popular articles dataset is quite noisy from the R-squared value. Indeed, the optimal linear regression has R-squared equal to 0.499. The fit does not explain a large amount of the set’s variance.
+                        </p>
+                    </div>
+                </div>
         </div>
         <br>
         <br>
         <br>
         <div class="row">
-            <div class="col-sm-5 class1">
+            <div class="col-lg-5 class1">
                 <div> 
                     <p>
                         <i>Scientific articles</i>
@@ -130,9 +131,20 @@
                     </p>
                 </div>
             </div>
-            <div class="col-sm-7 class1">
+            <div class="col-lg-7 class1">
                 <img  class="card-img" src="assets/img/results/scientific_climat_comparator_no_outliers.svg"/>
             </div>    
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="class1 col-lg-12 text-center">
+                <p>
+                    It seems far fetched to interpret the linear regression comparison between the popular articles and the climate change related articles for the first study case. Even though a short term effect is not excluded at the last interruption, it is confirmed neither by the other interruptions (where the jump simply doesn’t appear) nor by the other data set where we effectively observe no difference between the datasets. It seems that this jump could be an artefact created by the noise in the popular articles dataset.
+
+                    In the case of the scienfic corpus of articles, it is not possible to assess any long term "Empowering Effect" with confidence. In fact, both datasets almost appear to be the same in the linear regression and cannot be distinguished with any degree of reasonable confidence. This seems to imply that there is no significant increase in readings of scientific articles that are related to climate change.
+                </p>
+            </div>
         </div>
     </div>
 </section>
