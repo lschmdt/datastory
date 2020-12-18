@@ -10,29 +10,28 @@
             </p>
         <br>
         <br>
-        </div>
-        <div class="row">
-            <div class="col-lg-1"></div>
-            <div class="card col-lg-5">
-                <img class="bd-placeholder-img mx-auto d-bloc card-img-top column" style = "width: 400px" src=assets/img/results/common_bar_plot_without_outliers.svg>
-                <div class="card-body" style="font-size: 0.9em;">
-                    <p>
+        <div class="card-deck">
+            <div class="col-lg-6">
+                <div class="card">
+                  <img class="card-img-top mx-auto d-bloc" src="assets/img/results/common_bar_plot_without_outliers.svg">
+                  <div class="card-body">
+                    <p class="card-text">
                         First, it is noted that the climate articles have a steady increase of monthly mean number of pageviews across the 3 events. This seems to be consistent with an “Empowering Effect” already before comparison with the control group. Compared with the control group, we observe that only the first (+12% for treatment,  -34% for control) and third (+14% for treatment, -40% for control) interruptions lead to a more positive difference of monthly mean number of pageviews for the treatment group, whereas the comparison of both sets for the second interruption (+2% for treatment, +59% for control) shows a radically more positive difference for the control group.
                     </p>
-                </div> 
-            </div>
-            
-            <div class="card col-lg-5">
-                <img class="bd-placeholder-img mx-auto d-bloc card-img-top column" style = "width: 460px" src=assets/img/results/scientific_bar_plot_without_outliers.svg>
-                <div class="card-body" style="font-size: 0.9em;">
-                    <p>
-                    A comparison of the mean number of pageviews per month for each period is performed. The monthly mean is increased by about 2 % between period 1 and 2 for the treatment group whereas the monthly mean for the control is reduced by approximately 4.5 %. This doesn’t seem to be repeated for the second interruption, where the drop for both sets is comparable (approximately 10.5 %), even though a bit smaller for the climate change related set (more like 10.2 %). The trend is not verified either for the third interruption where the drop for the treatment is group 7.2 % but the drop for the control group is 4.3 %.
-                    </p>
+                  </div>
                 </div>
             </div>
-            <div class="col-lg-1"></div>
-            
-        </div>
+            <div class="col-lg-6">
+              <div class="card">
+                <img class="card-img-top mx-auto d-bloc" src="assets/img/results/scientific_bar_plot_without_outliers.svg">
+                <div class="card-body">
+                  <p class="card-text">
+                      A comparison of the mean number of pageviews per month for each period is performed. The monthly mean is increased by about 2 % between period 1 and 2 for the treatment group whereas the monthly mean for the control is reduced by approximately 4.5 %. This doesn’t seem to be repeated for the second interruption, where the drop for both sets is comparable (approximately 10.5 %), even though a bit smaller for the climate change related set (more like 10.2 %). The trend is not verified either for the third interruption where the drop for the treatment is group 7.2 % but the drop for the control group is 4.3 %.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         
         <div class="col-lg-12 text-center class1">
             <br>
@@ -48,30 +47,13 @@
 
         <div class="row">
             <div class="col-sm-6">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active" data-interval= "10000">
-                        <img class="d-block w-100" src=assets/img/results/common_climate_popular.svg alt="First slide">
-                      </div>
-                      <div class="carousel-item" data-interval= "10000">
-                        <img class="d-block w-100" src=assets/img/results/common_climate_popular_no_outliers.svg alt="Second slide">
-                      </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
-                <!--<img class="card-img" src="assets/img/results/common.svg"/>-->
+                <img class="card-img" src="assets/img/results/common_climate_popular_no_outliers.svg"/>
             </div>
             <div class="col-sm-6">
                 <div>
                     <p>
-                        Lorem ipsim
+                        The comparison between the linear regression on the popular articles and the one on the climate change related articles doesn’t seem to indicate clearly an "Empowering Effect". The long term effect is basically non-existent, indeed the slope of the number of views for both corpus is close to zero in the last period. A short term effect might possibly be argued at the last interruption, since a positive jump is observed in the number of pageviews of the climate change related articles and a negative jump is observed in the corpus featuring the popular articles. The strong negative jump in the corpus featuring the popular articles at the first interruption is also observable but can easily be attributed to noise, which is omnipresent on this set.
+                        We can see that the popular articles dataset is quite noisy from the R-squared value. Indeed, the optimal linear regression has R-squared equal to 0.499. The fit does not explain a large amount of the set’s variance.
                     </p>
                 </div>
             </div>
@@ -82,7 +64,7 @@
         <br/>
         <br/>
         <div class="row">
-            <div class="col-sm-4 class1">
+            <div class="col-sm-5 class1">
                 <div>
                     <p>
                         The linear regressions and their confidence intervals overlap heavily especially in the first and last periods. It is a good thing that they overlap in the first period because it means that both corpus are similar enough before the treatment appears. That they overlap so much in the last period would be consistent with the claim that there was no long term "Empowering Effect" in this case.
@@ -95,28 +77,9 @@
                     </p>
                 </div>
             </div>
-            <div class="col-sm-1"></div>
-            <div class="col-sm-7">
-                <div id="carouselResults2" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active" data-interval= "10000">
-                        <img class="d-block w-100" src=assets/img/results/scientific_climat_comparator.svg alt="First slide">
-                      </div>
-                      <div class="carousel-item" data-interval= "10000">
-                        <img class="d-block w-100" src=assets/img/results/scientific_climat_comparator_no_outliers.svg alt="Second slide">
-                      </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselResults2" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselResults2" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
-                <!--<img class="card-img" src="assets/img/results/scientific.svg"/>-->
-            </div>
+            <div class="col-sm-7 class1">
+                <img  class="card-img" src="assets/img/results/scientific_climat_comparator_no_outliers.svg"/>
+            </div>    
         </div>
     </div>
 </section>
