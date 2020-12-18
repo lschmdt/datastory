@@ -14,9 +14,8 @@
                 <b>Outliers gestion</b>
             </p>
             <p>
-                Firstly we can check the Cooks D values from the regression of each dataset to detect the presence of potential outliers.
-                We can see there are some outlieres in each dataset. Let's use the z-score to find the article that creates this effect.
-                We can verify the presence of outliers using the z-score as the paper did. Whether an article has a z-score superior to 3.0 or inferior to -3.0, it might be considered as an outlier. The z-score will be computed of the aggregated dataframe grouped by article.
+                It is important to control if our dataset does contain outliers. If it is the case, they need to be removed, in order to keep the dataset as meaningful as possible. To do so, the first thing to do is to use the Cooks D values from the regression of each dataset to detect the presence of potential outliers.
+                As some are observed, it is then decided to use the z-score to find the article that created this effect. This technique is used, in order to reproduce the method followed by J. Penney. Whether an article has a z-score superior to 3.0 or inferior to -3.0, it might be considered as an outlier. 
 
                 **\[COMMON]** : Global warming is apparently a large outlier, unfortunately, this is the main article related to our problematic, it has been decided to keep it in the dataset since it is very relevant.
 
@@ -138,11 +137,6 @@
     </div>
 </section>
 <style>
-    .carousel-control-next,
-    .carousel-control-prev /*, .carousel-indicators */ {
-    filter: invert(100%);
-        }
-
     .column {
     float: left;
     width: 50%;
