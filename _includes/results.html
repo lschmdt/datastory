@@ -10,13 +10,19 @@
             </p>
         <br>
         <br>
+        <p class="text-uppercase">
+            <bold>Montly mean</bold>
+        </p>
+        <p>
+            To start the analysis, monthly mean were performed as first results. A more positive change of the monthly mean number of pageviews for the Climate change articles as compared to the control articles would be consistent with an "Empowering Effect".
+        </p>
         <div class="card-deck">
             <div class="col-lg-6">
                 <div class="card">
-                  <img class="card-img-top mx-auto d-bloc" src="assets/img/results/common_bar_plot_without_outliers.svg" style="width: 90%">
+                  <img class="card-img-top mx-auto d-bloc" src="assets/img/results/common_bar_plot_without_outliers.svg" style="width: 86%">
                   <div class="card-body">
                     <p class="card-text">
-                        First, it is noted that the climate articles have a steady increase of monthly mean number of pageviews across the 3 events. This seems to be consistent with an “Empowering Effect” already before comparison with the control group. Compared with the control group, we observe that only the first (+12% for treatment,  -34% for control) and third (+14% for treatment, -40% for control) interruptions lead to a more positive difference of monthly mean number of pageviews for the treatment group, whereas the comparison of both sets for the second interruption (+2% for treatment, +59% for control) shows a radically more positive difference for the control group.
+                        Here, it is noted that the climate articles have a steady increase of monthly mean number of pageviews across the 3 events. This seems to be consistent with an “Empowering Effect” already before comparison with the control group. Compared with the control group, we observe that only the first (+12% for treatment,  -34% for control) and third (+14% for treatment, -40% for control) interruptions lead to a more positive difference of monthly mean number of pageviews for the treatment group, whereas the comparison of both sets for the second interruption (+2% for treatment, +59% for control) shows a radically more positive difference for the control group.
                     </p>
                   </div>
                 </div>
@@ -26,7 +32,7 @@
                 <img class="card-img-top mx-auto d-bloc" src="assets/img/results/scientific_bar_plot_without_outliers.svg">
                 <div class="card-body">
                   <p class="card-text">
-                      A comparison of the mean number of pageviews per month for each period is performed. The monthly mean is increased by about 2 % between period 1 and 2 for the treatment group whereas the monthly mean for the control is reduced by approximately 4.5 %. This doesn’t seem to be repeated for the second interruption, where the drop for both sets is comparable (approximately 10.5 %), even though a bit smaller for the climate change related set (more like 10.2 %). The trend is not verified either for the third interruption where the drop for the treatment is group 7.2 % but the drop for the control group is 4.3 %.
+                     Here it is observed that, the monthly mean is increased by about 2 % between period 1 and 2 for the treatment group whereas the monthly mean for the control is reduced by approximately 4.5 %. This doesn’t seem to be repeated for the second interruption, where the drop for both sets is comparable (approximately 10.5 %), even though a bit smaller for the climate change related set (more like 10.2 %). The trend is not verified either for the third interruption where the drop for the treatment is group 7.2 % but the drop for the control group is 4.3 %.
                   </p>
                 </div>
               </div>
@@ -45,9 +51,45 @@
             <br>
         </div>
 
-        <div>
+        <div class='col-lg-12 text-center class1'>
+            <p class="text-uppercase">
+                <bold>Outliers gestion</bold>
+            </p>
+            <p>
+                Firstly we can check the Cooks D values from the regression of each dataset to detect the presence of potential outliers.
+                We can see there are some outlieres in each dataset. Let's use the z-score to find the article that creates this effect.
+                We can verify the presence of outliers using the z-score as the paper did. Whether an article has a z-score superior to 3.0 or inferior to -3.0, it might be considered as an outlier. The z-score will be computed of the aggregated dataframe grouped by article.
+
+                **\[COMMON]** : Global warming is apparently a large outlier, unfortunately, this is the main article related to our problematic, it has been decided to keep it in the dataset since it is very relevant.
+
+                **\[SCIENTIFIC]** : We can consider that the outliers for the climate change dataset are Health, Life expectancy and Humanism, it is logical since these themes are linked to other matter that only the climate change. For the control dataset about scientific articles, we can see the Galileo Galilei and Autism are outliers. We can drop them in the aggregate.          
+
+            </p>
+            
+            <p>
+                We can plot the Global warming outlier for the whole period and consider the interruptions to see if it is consistent with an "Empowering Effect". Here, the pageviews are averaged over 7 days to filter out the weekly pattern.
+            </p>
+            <p class="text-uppercase">
+                <bold>Global warming article</bold>
+            </p>
             <img src=assets/img/results/global_warming.svg width="50%">
+            <br>
+            <br>
+            <p>
+                It seems like the first interruption doesn't lead to a direct increase in pageviews, eventhough they appear a bit later. The second interruption, if anything, leads to a sudden and sharp drop that is not consistent with an "Empowering Effect". Only the third interruption lead to an increase of the pageviews which would be consistent with an "Empowering Effect".
+            </p>
+            <br>
+            <br>
+            <p class="text-uppercase">
+                <bold>Linear regression</bold>
+            </p>
+            <p>
+                
+                If there is a short term "Empowering Effect", the short term change in number of pageviews after the interruption should be more positive for the treatment group than for the control. If there is a long term "Empowering Effect", the change in the slope of the regression after the interruption should be more positive for the treatment group than for the control. From that and the confidence intervals, it should be possible to assess if we can observe with confidence an "Empowering Effect".
+                To correct for the radically different number of pageviews across article groups, the pageviews per month are normalized by the mean of the distribution. The normalization should not be dependent on the difference of noise between the data sets and therefore it is not normalized by the maximum value.
+            </p>
         </div>
+
 
         <div class="row">
             <div class="col-sm-7">
