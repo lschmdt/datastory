@@ -6,7 +6,8 @@
         <div class="col-lg-12 text-center class1">
             <h2 class="section-heading text-uppercase text-center">Results</h2>
                 <p>
-                    To verify the claim of an "Empowering effect", we use the immediate change in pageviews from before to after each event, as well as the long term trend indicated by the regression slopes and levels. The potential trends observed in the treatment group is compared to the data in the comparator group. To verify the statistical significance of those results, the confidence intervals of the regressions are taken into consideration. 
+                    To verify the claim of an "Empowering effect", we use the immediate change in pageviews from before to after each event, as well as the long term trend indicated by the regression slopes and levels. The potential trends observed in the treatment group is compared to the data in the comparator group. To verify the statistical significance of those results, the confidence intervals of the regressions are taken into consideration.
+
                 </p>
             <br>
             <br>
@@ -14,12 +15,7 @@
                 <b>Outliers gestion</b>
             </p>
             <p>
-                It is important to control if our dataset does contain outliers. If it is the case, they need to be removed, in order to keep the dataset as meaningful as possible. To do so, the first thing to do is to use the Cooks D values from the regression of each dataset to detect the presence of potential outliers.
-                As some are observed, it is then decided to use the z-score to find the article that created this effect. This technique is used, in order to reproduce the method followed by J. Penney. Whether an article has a z-score superior to 3.0 or inferior to -3.0, it might be considered as an outlier. 
-
-                For the first study case, in the climate related group, <a href="https://en.wikipedia.org/wiki/Climate_change">"Global warming"</a> is apparently a large outlier, unfortunately, this is the main article related to our problematic, it has been decided to keep it in the dataset since it is very relevant.
-
-                Concerning the second study case, we can consider that the outliers for the climate change dataset are <a href="https://en.wikipedia.org/wiki/Health">"Health"</a>, <a href="https://en.wikipedia.org/wiki/Life_expectancy">"Life expectancy"</a> and <a href="https://en.wikipedia.org/wiki/Humanism">"Humanism"</a>, it is logical since these themes are linked to other matter that only the climate change. For the control dataset about scientific articles, we can see the Galileo Galilei and Autism are outliers. We can drop them in the aggregate.          
+                It is important to control if our dataset does contain outliers. If it is the case, they need to be removed, in order to keep the dataset as meaningful as possible. To do so, the first thing to do is to use the Cook's D values from the regression of each dataset to detect the presence of potential outliers. As some are observed, it is then decided to use the z-score to find the article that created this effect. This technique is used, in order to reproduce the method followed by J. Penney. Whether an article has a z-score superior to 3.0 or inferior to -3.0, it might be considered as an outlier. For the first study case, in the climate related group, <a href="https://en.wikipedia.org/wiki/Climate_change">"Global warming"</a> is apparently a large outlier, unfortunately, this is the main article related to our problematic, it has been decided to keep it in the dataset since it is very relevant. Concerning the second study case, we can consider that the outliers for the climate change dataset are <a href="https://en.wikipedia.org/wiki/Health">"Health"</a>, <a href="https://en.wikipedia.org/wiki/Life_expectancy">"Life expectancy"</a> and <a href="https://en.wikipedia.org/wiki/Humanism">"Humanism"</a>, it is logical since these themes are linked to other matter that only the climate change. For the control dataset about scientific articles, we can see the Galileo Galilei and Autism are outliers. We can drop them in the aggregate.        
 
             </p>
             <p>
@@ -27,13 +23,15 @@
             </p>
             <p>
                 On the image below, the Global warming outlier is plotted for the whole period, considering the interruptions to see if it is consistent with an "Empowering Effect". Here, the pageviews are averaged over 7 days to filter out the weekly pattern.
+
             </p>
             
             <img src=assets/img/results/global_warming.svg width="50%">
             <br>
             <br>
             <p>
-                It seems like the first interruption doesn't lead to a direct increase in pageviews, eventhough they appear a bit later. The second interruption, if anything, leads to a sudden and sharp drop that is not consistent with an "Empowering Effect". Only the third interruption lead to an increase of the pageviews which would be consistent with an "Empowering Effect".
+                It seems like the first interruption doesn't lead to a direct increase in pageviews, even though they appear a bit later. The second interruption, if anything, leads to a sudden and sharp drop that is not consistent with an "Empowering Effect''. Only the third interruption leads to an increase of the pageviews which would be consistent with an "Empowering Effect".
+
             </p>
             
             <br>
@@ -42,7 +40,8 @@
                 <b>Monthly mean</b>
             </p>
             <p>
-                To start the analysis, monthly mean were performed as first results. A more positive change of the monthly mean number of pageviews for the Climate change articles as compared to the control articles would be consistent with an "Empowering Effect".
+                To start the analysis, monthly means were performed as first results. A more positive change of the monthly mean number of pageviews for the Climate change articles as compared to the control articles would be consistent with an "Empowering Effect".
+
             </p>
             <br>
             <div class="card-deck">
@@ -51,7 +50,7 @@
                     <img class="card-img-top mx-auto d-bloc" src="assets/img/results/common_bar_plot_without_outliers.svg" style="width: 86%; margin-top: 20px;">
                     <div class="card-body">
                         <p class="card-text">
-                            Here, it is noted that the climate articles have a steady increase of monthly mean number of pageviews across the 3 events. This seems to be consistent with an “Empowering Effect” already before comparison with the control group. Compared with the control group, we observe that only the first (+12% for treatment,  -34% for control) and third (+14% for treatment, -40% for control) interruptions lead to a more positive difference of monthly mean number of pageviews for the treatment group, whereas the comparison of both sets for the second interruption (+2% for treatment, +59% for control) shows a radically more positive difference for the control group.
+                            Here, it is noted that the climate articles have a steady increase of monthly mean number of pageviews across the 3 events. This seems to be consistent with an “Empowering Effect” already before comparison with the control group. Compared with the control group, we observe that only the first (+12% for treatment, -34% for control) and third (+14% for treatment, -40% for control) interruptions lead to a more positive difference of monthly mean number of pageviews for the treatment group, whereas the comparison of both sets for the second interruption (+2% for treatment, +59% for control) shows a radically more positive difference for the control group.
                         </p>
                     </div>
                     </div>
@@ -71,9 +70,7 @@
             <br>
             <br>
             <p>
-                The steady increase of the treatment group when the other group has radical differences between periods is consistent with an "Empowering Effect" at least for the first and last interruptions. The control group has a large variance, which seems to make the comparison a bit fragile here.
-
-                Intuitively, if the claim of an "Empowering Effect" is true, the monthly mean number of pageviews across the 4 periods should increase more/decrease less in the treatment group (articles related to climate change) than in the control. This sort of trend is not observable for the scientific articles, at least not for the 2nd and 3rd interventions. One might argue that the first intervention might have had an impact. This claim is to be verified by further tests.
+                The steady increase of the treatment group when the other group has radical differences between periods is consistent with an "Empowering Effect" at least for the first and last interruptions. The control group has a large variance, which seems to make the comparison a bit fragile here. Intuitively, if the claim of an "Empowering Effect" is true, the monthly mean number of pageviews across the 4 periods should increase more/decrease less in the treatment group (articles related to climate change) than in the control. This sort of trend is not observable for the scientific articles, at least not for the 2nd and 3rd interventions. One might argue that the first intervention might have had an impact. This claim is to be verified by further tests.
             </p>
             <br>
             <br>
@@ -109,6 +106,7 @@
                         </p>
                         <p>
                             The popular articles dataset is quite noisy from the computed R-squared value. Indeed, the optimal linear regression has R-squared equal to 0.499. The fit does not explain a large amount of the set’s variance.
+
                         </p>
                     </div>
                 </div>
@@ -127,6 +125,7 @@
                     </p>
                     <p>
                         No immediate change can be observed at the interruptions. The confidence intervals overlap quite a bit and it is difficult to assess a long term effect.
+
                     </p>
                     <p>
                         It is worth noting here that the R-squared value of both linear regressions are similar, suggesting that the quality of the fits is comparable. This is also due to the fact that the variance in both sets is comparable.
@@ -141,9 +140,7 @@
         <br>
             <div class="class1 col-lg-12 text-center">
                 <p>
-                    It seems far fetched to interpret the linear regression comparison between the popular articles and the climate change related articles for the first study case. Even though a short term effect is not excluded at the last interruption, it is confirmed neither by the other interruptions (where the jump simply doesn’t appear) nor by the other data set where we effectively observe no difference between the datasets. It seems that this jump could be an artefact created by the noise in the popular articles dataset.
-
-                    In the case of the scienfic corpus of articles, it is not possible to assess any long term "Empowering Effect" with confidence. In fact, both datasets almost appear to be the same in the linear regression and cannot be distinguished with any degree of reasonable confidence. This seems to imply that there is no significant increase in readings of scientific articles that are related to climate change.
+                    It seems far fetched to interpret the linear regression comparison between the popular articles and the climate change related articles for the first study case. Even though a short term effect is not excluded at the last interruption, it is confirmed neither by the other interruptions (where the jump simply doesn’t appear) nor by the other data set where we effectively observe no difference between the datasets. It seems that this jump could be an artefact created by the noise in the popular articles dataset. In the case of the scientific corpus of articles, it is not possible to assess any long term "Empowering Effect" with confidence. In fact, both datasets almost appear to be the same in the linear regression and cannot be distinguished with any degree of reasonable confidence. This seems to imply that there is no significant increase in readings of scientific articles that are related to climate change.
                 </p>
             </div>
     </div>
