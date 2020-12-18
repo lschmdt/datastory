@@ -2,16 +2,16 @@
 <section class="page-section" id="debut" style="padding: 0 0">
                 <div id="carouselExampleControls" class="carousel slide" style="background-color: lightsteelblue;" data-ride="carousel">
                     <div class="carousel-inner">
-                    <div class="carousel-item active" style="height: 45vh; padding:0px 100px" data-interval= "10000">
-                        <blockquote>
+                    <div class="carousel-item active cn" style="height: 45vh; padding:0px 100px" data-interval= "10000">
+                        <blockquote class="inner">
                         <p style="color:white; font-size: 1.9em; font-family: 'Courier New', Courier, monospace, serif; text-align: center;">"You must unite behind the science. You must take action. You must do the impossible. Because giving up can never ever be an option." </p>
                         <footer class="text-right" style="color:white;" ><i>Greta Thunberg</i><br>
                         <cite style="color:white;"><i>US Congress, Washington DC (2019)</i></cite>
                         </footer>
                     </blockquote>
                     </div>
-                    <div class="carousel-item" style="height: 45vh; padding:0px 100px; margin:auto; width: 100%;" data-interval= "10000">
-                        <blockquote>
+                    <div class="carousel-item cn" style="height: 45vh; padding:0px 100px; margin:auto; width: 100%;" data-interval= "10000">
+                        <blockquote class="inner">
                         <p style="color:white; font-size: 1.9em; font-family: 'Courier New', Courier, monospace, serif; text-align: center;">"Unite behind the science, that is our demand." </p>
                         <footer class="text-right" style="color:white;" ><i>Greta Thunberg</i><br>
                         <cite style="color:white;"><i>European Economic and Social Committee (2019)</i></cite>
@@ -29,3 +29,15 @@
                     </a>
  
 </section>
+<style>
+    .cn{
+        position: relative;
+    }
+    .inner{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 75%;
+    }
+</style>
