@@ -6,7 +6,7 @@
         <div class="col-lg-12 text-center class1">
             <h2 class="section-heading text-uppercase text-center">Results</h2>
                 <p>
-                    To verify the claim of an "Empowering effect", we will use the immediate change in pageviews from before to after each event, as well as the long term trend indicated by the regression slopes and levels. The potential trends observed in the treatment group will be compared to the data in the comparator group. To verify the statistical significance of those results, the confidence intervals of the regressions are taken into consideration. 
+                    To verify the claim of an "Empowering effect", we use the immediate change in pageviews from before to after each event, as well as the long term trend indicated by the regression slopes and levels. The potential trends observed in the treatment group is compared to the data in the comparator group. To verify the statistical significance of those results, the confidence intervals of the regressions are taken into consideration. 
                 </p>
             <br>
             <br>
@@ -17,9 +17,9 @@
                 It is important to control if our dataset does contain outliers. If it is the case, they need to be removed, in order to keep the dataset as meaningful as possible. To do so, the first thing to do is to use the Cooks D values from the regression of each dataset to detect the presence of potential outliers.
                 As some are observed, it is then decided to use the z-score to find the article that created this effect. This technique is used, in order to reproduce the method followed by J. Penney. Whether an article has a z-score superior to 3.0 or inferior to -3.0, it might be considered as an outlier. 
 
-                **\[COMMON]** : Global warming is apparently a large outlier, unfortunately, this is the main article related to our problematic, it has been decided to keep it in the dataset since it is very relevant.
+                For the first study case, in the climate related group, <a href="https://en.wikipedia.org/wiki/Climate_change">"Global warming"</a> is apparently a large outlier, unfortunately, this is the main article related to our problematic, it has been decided to keep it in the dataset since it is very relevant.
 
-                **\[SCIENTIFIC]** : We can consider that the outliers for the climate change dataset are Health, Life expectancy and Humanism, it is logical since these themes are linked to other matter that only the climate change. For the control dataset about scientific articles, we can see the Galileo Galilei and Autism are outliers. We can drop them in the aggregate.          
+                Concerning the second study case, we can consider that the outliers for the climate change dataset are <a href="https://en.wikipedia.org/wiki/Health">"Health"</a>, <a href="https://en.wikipedia.org/wiki/Life_expectancy">"Life expectancy"</a> and <a href="https://en.wikipedia.org/wiki/Humanism">"Humanism"</a>, it is logical since these themes are linked to other matter that only the climate change. For the control dataset about scientific articles, we can see the Galileo Galilei and Autism are outliers. We can drop them in the aggregate.          
 
             </p>
             <p>
